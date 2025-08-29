@@ -1,0 +1,326 @@
+/* ========== STYLES POUR LA PAGE DÉTAIL D'UN POST ========== */
+.post-detail-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== Style du post principal ===== */
+.post-main {
+    background: rgba(0, 15, 30, 0.5); /* Fond translucide */
+    border: 1px solid rgba(55, 175, 229, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.post-header {
+    background: rgba(0, 30, 60, 0.7);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(55, 175, 229, 0.3);
+}
+
+.post-title {
+    font-size: 20px;
+    color: #37afe5;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.post-time {
+    font-size: 14px;
+    color: #8cb5e4;
+    margin-right: 15px;
+}
+
+/* Bouton retour et tooltip */
+.back-button {
+    position: relative;
+    cursor: pointer;
+}
+
+.back-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #8cb5e4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.back-button:hover .back-arrow {
+    background: rgba(55, 175, 229, 0.2);
+    color: #37afe5;
+}
+
+.tooltip {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    background: rgba(0, 20, 40, 0.95);
+    border: 1px solid rgba(55, 175, 229, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.back-button:hover .tooltip {
+    display: flex;
+}
+
+.tooltip:hover {
+    display: flex;
+}
+
+.tooltip-button {
+    padding: 8px 12px;
+    background: linear-gradient(180deg, #1c4c6e, #0d2b40);
+    color: #d8e8f0;
+    border: 1px solid rgba(55, 175, 229, 0.3);
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.tooltip-button:hover {
+    background: linear-gradient(180deg, #265d86, #123551);
+    transform: translateY(-1px);
+}
+
+/* Contenu du post */
+.post-content-wrapper {
+    display: flex;
+    padding: 0;
+}
+
+.user-info {
+    width: 150px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgba(55, 175, 229, 0.1);
+    background: rgba(0, 15, 25, 0.3);
+}
+
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid rgba(55, 175, 229, 0.3);
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-details {
+    width: 100%;
+    text-align: center;
+}
+
+.user-pseudo {
+    color: #37afe5;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.user-type {
+    color: #ffcc00;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.profile-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(0, 30, 60, 0.5);
+    color: #8cb5e4;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid rgba(55, 175, 229, 0.2);
+    transition: all 0.2s;
+}
+
+.profile-link:hover {
+    background: rgba(55, 175, 229, 0.2);
+    color: #d8e8f0;
+}
+
+.post-content {
+    flex: 1;
+    padding: 20px;
+    color: #d8e8f0;
+    font-size: 14px;
+    line-height: 1.6;
+    background: rgba(0, 15, 30, 0.3);
+}
+
+.post-footer {
+    background: rgba(0, 30, 60, 0.7);
+    padding: 10px 15px;
+    border-top: 1px solid rgba(55, 175, 229, 0.3);
+}
+
+.responses-count {
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(0, 20, 40, 0.5);
+    color: #8cb5e4;
+    border-radius: 15px;
+    font-size: 12px;
+    border: 1px solid rgba(55, 175, 229, 0.2);
+}
+
+/* ===== Formulaire de réponse ===== */
+.reply-form-container {
+    background: rgba(0, 15, 30, 0.5);
+    border: 1px solid rgba(55, 175, 229, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.reply-form-compact {
+    padding: 15px;
+    color: #8cb5e4;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.reply-form-compact:hover {
+    background: rgba(0, 30, 60, 0.5);
+    color: #d8e8f0;
+}
+
+.reply-form-expanded {
+    display: none;
+    padding: 15px;
+}
+
+#replyContent {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    background: rgba(0, 15, 25, 0.7);
+    border: 1px solid rgba(55, 175, 229, 0.3);
+    border-radius: 5px;
+    color: #d8e8f0;
+    font-size: 14px;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.reply-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancel-button, .submit-button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.cancel-button {
+    background: rgba(150, 150, 150, 0.2);
+    color: #d8e8f0;
+    border: 1px solid rgba(150, 150, 150, 0.3);
+}
+
+.cancel-button:hover {
+    background: rgba(150, 150, 150, 0.3);
+}
+
+.submit-button {
+    background: linear-gradient(180deg, #1c4c6e, #0d2b40);
+    color: #d8e8f0;
+    border: 1px solid rgba(55, 175, 229, 0.3);
+}
+
+.submit-button:hover {
+    background: linear-gradient(180deg, #265d86, #123551);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Liste des réponses ===== */
+.responses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.response-item {
+    background: rgba(0, 15, 30, 0.5);
+    border: 1px solid rgba(55, 175, 229, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    backdrop-filter: blur(5px);
+}
+
+.response-content {
+    flex: 1;
+    padding: 15px;
+    color: #d8e8f0;
+    font-size: 14px;
+    line-height: 1.6;
+    background: rgba(0, 15, 30, 0.3);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .post-content-wrapper {
+        flex-direction: column;
+    }
+    
+    .user-info {
+        width: 100%;
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 1px solid rgba(55, 175, 229, 0.1);
+    }
+    
+    .user-avatar {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    
+    .user-details {
+        text-align: left;
+    }
+    
+    .response-item {
+        flex-direction: column;
+    }
+}

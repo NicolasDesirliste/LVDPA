@@ -1,0 +1,106 @@
+/* ===== SIDEBAR GAUCHE ===== */
+.sidebar {
+    background: linear-gradient(90deg, #000a10 0%, #00111a 100%);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 50;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    padding: 8px 20px;
+    color: #8cbceccb;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(55, 175, 229, 0.1);
+    font-size: 18px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 70, 120, 0.3) 0%,
+        rgba(0, 100, 140, 0.541) 100%
+    );
+    color: #0288f5c9;
+    text-shadow: 0 0 5px rgba(100, 201, 255, 0.712);
+    box-shadow: 0 0 10px rgba(65, 183, 238, 0.808), 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.menu-item.active {
+    position: relative;
+}
+
+.menu-item.active:before {
+    content: "▶";
+    position: absolute;
+    left: 5px;
+    color: #4aa5ff;
+    font-size: 12px;
+    text-shadow: 0 0 3px #4aa5ff;
+}
+
+/* ===== TOOLTIPS SIDEBAR ===== */
+.sidebar-tooltip {
+    position: absolute;
+    left: 230px;
+    top: 0;
+    width: 250px;
+    background: linear-gradient(
+        135deg,
+        rgba(5, 25, 40, 0.95),
+        rgba(2, 12, 20, 0.9)
+    );
+    border: 1px solid rgba(55, 174, 229, 0.637);
+    border-radius: 3px;
+    padding: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 99;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 5px rgba(55, 175, 229, 0.2);
+}
+
+.sidebar-tooltip:before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid rgba(55, 174, 229, 0.808);
+}
+
+.menu-item:hover .sidebar-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltips-header {
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(55, 175, 229, 0.3);
+    padding-bottom: 5px;
+}
+
+.tooltips-header h6 {
+    color: #6ab1d8;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.sidebar-tooltip h4 {
+    color: #5d8ca6;
+    font-size: 13px;
+    margin: 8px 0 5px;
+    border-bottom: 1px solid rgba(55, 175, 229, 0.2);
+    padding-bottom: 3px;
+}

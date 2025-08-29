@@ -1,0 +1,47 @@
+/* ===== HEADER ===== */
+.header {
+    grid-area: header;
+    padding: 20px;
+    border-bottom: 1px solid rgba(55, 175, 229, 0.2);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 5, 30, 0.9) 0%,
+        rgba(0, 30, 45, 0.7) 100%
+    );
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 18px;
+    color: rgba(187, 219, 255, 0.9);
+    text-shadow: 0 0 5px rgba(80, 135, 255, 0.897);
+    position: relative;
+    padding-left: 30px;
+}
+
+.header h1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #5bbcff, #006fc4);
+    border-radius: 50%;
+    box-shadow: 0 0 10px #4aa5ff, 0 0 20px rgba(74, 165, 255, 0.5);
+}
+
+/* Style pour la navigation dans l'en-tête */
+.header nav {
+    margin-right: 20px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
