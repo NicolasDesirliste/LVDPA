@@ -1,4 +1,4 @@
-## Cahier des charges (considérations et revues):
+### Cahier des charges (considérations et revues):
 
 ## Lexique:
 - Ses objectifs
@@ -10,9 +10,9 @@
 - Ses modalités de test et de recette
 - Les futures maintenance et possibles évolutions  
 
-## Introduction: 
+# Introduction: 
 
-# Contexte: 
+## Contexte: 
 
 Depuis plusieurs années maintenant il devient de plus en plus difficile pour les pères de se faire entendre par la justice lors de séparations conflictuelles avec la mère de leur(s) enfant(s).
 
@@ -21,20 +21,20 @@ Il est aussi de plus en plus facile pour les mères mal intentionnées d’utili
 De nos jours, bien trop souvent les hommes qui essayent de communiquer se font pointer du doigt, traiter de choses qu’ils ne sont pas, se font accuser à tort de choses qu'ils n'ont pas commise et parfois même censurer sous forme de bannissement de différentes plateformes connues. 
 
 
-# Objectifs généraux de l'application:   
+## Objectifs généraux de l'application:   
 
 Vu la recrudescence de ce genre de problème avec le nombre de familles brisées par une séparation ou un divorce, vu la nature un peu régressive des valeurs morales et sociales, et vu le manque de support moral et financier pour les hommes dans cette situation. 
 
-# Parties prenantes:  
+## Parties prenantes:  
 Les personnes physiques identifiées par type (particulier, avocat, psychologue, médiateurs) par la suite.  
 
-## Présentation:
+# Présentation:
 
-# Description:
+## Description:
 
 La Voix Des Pères Abandonnés est une application web en SPA et responsive qui vise à venir sur internet dans un premier temps pour permettre aux hommes victimes de ces injustices d’échanger entre eux ou avec des professionnels inscrits, dans un cadre sécurisé et spécialisé par une mise en contact direct et anonyme dans un premier temps, ainsi que par la possibilité d’échanger publiquement sur une partie forum sur lequel ils seront identifié par leur pseudonyme et par leur type.  Les “particuliers” auront aussi la possibilité d’envoyer un formulaire contenant 20 questions spécifiques adressées à un certain type de professionnel, par types de professionnels et par départements qui pourront à leur tour consulter les formulaires pour choisir un “dossier” et contacter l’intéressé. 
 
-# Public cible: 
+## Public cible: 
 
 Les personnes dans le besoin d’aide légale ou psychologique pendant et après la séparation / le divorce. 
 Les professionnels voulant porter assistance à cette clientèle et proposer leurs services / faire partie de cette communauté. 
@@ -59,11 +59,11 @@ LVDPA apporte aussi des informations sur divers sujets relatifs à ces problème
 
 Des plateformes ayant un but similaire existent (SOSpapa) mais elles agissent plus comme des blogs et se limitent à des fonctionnalités minimales, elles ne permettent pas d’interaction entre les utilisateurs, de plus les services proposés sont bloqués derrière des souscriptions assez élevées, ce qui peut souvent être difficile à payer après un divorce. 
 
-## LVDPA: Les fonctionnalités:
+# LVDPA: Les fonctionnalités:
 
 Elle est avant toute chose une plateforme visant à trouver des professionnels qualifiés près de chez soi et permettre une communication directe avec eux, de ce fait ses fonctionnalités essentielles sont dans cet ordre précis côté client:
 
-# Pour les particuliers: 
+## Pour les particuliers: 
 
 - La possibilité de créer un compte et de le valider. (check!) 
 - Créer son propre profil et le valider (check!) 
@@ -72,14 +72,14 @@ Elle est avant toute chose une plateforme visant à trouver des professionnels q
 - La possibilité de lui envoyer un message et d’en recevoir. (en cours)
 - La possibilité de créer un formulaire de contact et de le valider pour qu’il puisse être consulté par le type de professionnel concerné. (en cours)
 
-# Pour les professionnels:  
+## Pour les professionnels:  
 
 - La possibilité de créer un compte et de le valider. (check!)
 - Créer son propre profil et le valider (check!)
 - La possibilité d’envoyer des messages et d’en recevoir. (en cours)
 - La possibilité de consulter la boîte à formulaire de son type de compétence. (en cours)
 
-# Pour tous les utilisateurs confondus:
+## Pour tous les utilisateurs confondus:
 
 - Le système de signalements de mauvais comportements / comportements contraires aux principes du site et du RGPD du 25 Mai 2018. (en cours)
 - Le système de notification par email et le MFA (en cours) 
@@ -87,7 +87,7 @@ Elle est avant toute chose une plateforme visant à trouver des professionnels q
 - La page d’édition des préférences personnelles et de gestion des utilisateurs bloqués. 
 - La possibilité de visiter la page explicative “La Mission LVDPA” qui explique la mentalité du site et les règles internes/externes à respecter, notamment le RGPD qu’ils pourront consulter sur le site du gouvernement via un bouton de redirection. 
 
-# Les fonctionnalités moins prioritaires pour l’instant, mais en cours de développement et de considération: 
+## Les fonctionnalités moins prioritaires pour l’instant, mais en cours de développement et de considération: 
 
 - La partie forum (principale.)
 - La partie forum (divers) avec des restrictions spécifiques (politique, orientation sexuelle, etc)
@@ -110,7 +110,7 @@ Monitoring des tentatives d’intrusion
 D’autres fonctionnalités “tous utilisateurs” sont en cours d’étude pour répondre aux besoins actuels/futurs, ou pour ajuster/améliorer certaines solutions déjà proposées sur l’application.  Un exemple pourrait-être l’ajout d’une pastille colorée indiquant le statut actuel de connexion de chaque utilisateur (vert: En ligne, rouge: Non connecté.)
 La mise en place d’une application Android/iOS codée en Java/Dart et connectée à son application parente. 
 
-# Parcours Utilisateur: Exemple n°1
+## Parcours Utilisateur: Exemple n°1
 
 Aurélien, 39 ans, père célibataire.
 
@@ -118,7 +118,7 @@ Objectif: Trouver un avocat spécialisé et passionné par ce type de cause.
 
 Accusé à tort de plusieurs choses aux tribunal des affaires familiales par une ex-compagne abusive et malhonnête, il ne voit plus ses enfants car la mère lui fait du chantage émotionnel en utilisants leurs enfants comme outils, tout en ne respectant pas les conditions du jugements et en faisant de l’aliénation parentale. Il ne sait pas où trouver du soutien dans ses démarches après avoir essayé de faire valoir ses droits et il aimerait pouvoir échanger avec d’autres personnes dans son cas, dans un contexte sécure et saint, tout en ayant la possibilité de trouver un support psychologique et légal s’il le souhaite.  
 
-# Page du site (SPA) et étapes: 
+## Page du site (SPA) et étapes: 
 
  Aurélien arrive sur le site depuis google après avoir cherché “soutien pères célibataires”.
 Il regarde les onglets de la barre verticale gauche qui ouvrent des tooltips dynamiques lui proposant divers options au passage de sa souris. 
@@ -136,12 +136,12 @@ Il décide de visiter le profil de Desi (Avocat) en cliquant sur son bouton/
 
 Il apprécie les informations présentées sur le profil de Desi et décide de cliquer sur le bouton: “Contacter ce professionnel” pour ouvrir la communication avec lui. 
 
-# Parcours Utilisateur: Exemple n°2
+## Parcours Utilisateur: Exemple n°2
 
 Michel 43 ans, souffre d’une dépression après une séparation douloureuse où il a appris qu’il n’est pas le père biologique de son enfant (Bastien, 16 ans) suite à l'infidélité cachée de son ex-femme, avec qui il était marié depuis 18 ans. Il découvre que le père biologique est en réalité un de ses amis d’enfance pour lequel il avait des suspicions depuis longtemps, mais qu’il n’avait pas voulu croire suite aux perpétuels gaslights de son ex-épouse qui le faisait passer pour fou. Cette nouvelle s’est montrée particulièrement dévastatrice car son couple était dysfonctionnel depuis plusieurs années sans qu’il puisse vraiment mettre le doigt sur la raison. La Juge des affaires familiales l’a aussi condamné à payer une pension alimentaire pour Bastien après avoir pris connaissance de cette infidélité et du fait que Michel n’est pas le père biologique, ce qui donne un ressenti de double punition à Julien.    
 Objectif: Trouver un soutien moral / émotionnel pour traverser cette épreuve.  
 
-# Page du site (SPA) et étapes: 
+## Page du site (SPA) et étapes: 
 
 Michel arrive sur le site depuis google après avoir cherché “Père trompé fraude paternité”.
 Il regarde les onglets de la barre verticale gauche qui ouvrent des tooltips dynamiques lui proposant divers options au passage de sa souris. 
@@ -161,7 +161,7 @@ Après avoir lu les 20 questions il décide de répondre oui à la première que
 Après avoir parcouru les 20 questions du formulaire et après y avoir répondu une à une en apportant des précisions, il soumet le formulaire et reçoit une confirmation de soumission par email. 
 Le lendemain matin à 9h33, Michel reçoit un autre email de LVDPAmail qui l’informe que Céline, une psychologue débutante mais passionnée par cette cause a acceptée son formulaire et qu’elle veut prendre contact avec lui pour lui proposer un premier rendez-vous téléphonique dans le but de discuter de sa situation.   
 
-# Règles de gestion de l’application: 
+## Règles de gestion de l’application: 
 
 Articles de lois:
 Suite à la nature vulnérable des utilisateurs, à la sensibilité et confidentialité potentielle des sujets qui seront traités sur son application, LVDPA se doit d’étudier et d’adhérer scrupuleusement aux lois de protection des données, de l’information et des droits de l’homme, précisément les lois de protection des données (RGPD, Loi Informatique et Libertés), au secret professionnel (Code de la santé publique), ainsi qu'aux droits fondamentaux de la personne (Code civil, LCEN).
@@ -188,7 +188,7 @@ Responsabilité des hébergeurs, modération de contenu
 Article 9 : droit au respect de la vie privée
 Articles 226-1 à 226-7 du Code pénal : atteinte à la vie privée
 
-# Règles d'inscription et validation - Professionnels uniquement
+## Règles d'inscription et validation - Professionnels uniquement
 
 - Avocats :
 Identification obligatoire :
@@ -227,6 +227,7 @@ Délai de validation : 15 jours ouvrés maximum après réception du dossier com
 Les particuliers ne devront justifier d’aucun document pour leur inscription. 
 
 ## Règles de messagerie / Formulaire - LVDPA
+
 # Limites d'utilisation :
 
 - Pour les particuliers :
@@ -263,34 +264,34 @@ Contenu à caractère sexuel → suppression immédiate + bannissement + rapport
 Chantage ou menaces → signalement aux autorités + bannissement
 Conseil juridique non autorisé (par non-avocat) → avertissement puis sanction
 
-## Sécurité et confidentialité :
+# Sécurité et confidentialité :
 
-# Chiffrement :
+## Chiffrement :
 - Conversations avec psychologues : chiffrement bout-en-bout
 - Autres conversations : chiffrement standard en base
 - Impossibilité pour l'administration de lire les conversations chiffrées
 
-# Traçabilité :
+## Traçabilité :
 - Journalisation des connexions à la messagerie (12 mois)
 - Historique des signalements conservé 2 ans
 - Logs d'accès aux conversations (détection d'intrusion)
 
-# Notifications :
+## Notifications :
 - Email de notification : paramétrable par l'utilisateur
 - Délai anti-harcèlement : maximum 1 notification email par 6h
 - Option "ne pas déranger" : pause des notifications 24h-48h jusqu'à semaines ou “jusqu'à nouvel ordre.”
 
-# Règles du système de formulaires - LVDPA
+## Règles du système de formulaires - LVDPA
 - Création des formulaires (côté particuliers) :
 
-# Limites de création :
+## Limites de création :
 - Maximum 3 formulaires actifs simultanément par particulier (1 par type)
 - Impossibilité de créer un nouveau formulaire si un est "en cours de traitement"
 - Délai minimum de 7 jours entre deux créations de formulaires pour le même type de pro
 - Compte validé depuis minimum 48h pour créer son premier formulaire
 - Contenu obligatoire :
 
-# Réponse à toutes les questions
+## Réponse à toutes les questions
 
 - Zone de précision textuelle limitée à 1500 caractères par question
 - Validation avant publication ( // = considérations à implémenter sur la durée):
@@ -298,20 +299,20 @@ Conseil juridique non autorisé (par non-avocat) → avertissement puis sanction
 - // Vérification automatique : pas de coordonnées personnelles
 - // Contrôle du vocabulaire : pas d'injures, menaces ou propos diffamatoires
 
-# Validation en 24h maximum (jours ouvrés)
+## Validation en 24h maximum (jours ouvrés)
 
 - // Refus de validation = email explicatif + possibilité de correction sous 15 jours
 
 ## Attribution aux professionnels :
 
-# Système de distribution :
+## Système de distribution :
 
 - Formulaires visibles “uniquement” par les pros du type concerné, avec une option de tri par département. 
 - Ordre d'affichage : date de création (plus ancien en premier)
 - Un formulaire ne peut être "réservé" que par un seul professionnel à la fois
 - Système de "réservation" temporaire : 2h pour examiner avant prise en charge
 
-# Règles d'attribution :
+## Règles d'attribution :
 
 - Un professionnel peut consulter maximum 15 formulaires par mois (changera en fonction de la popularité de l'application et de la demande pros/client)
 - Impossible de prendre en charge plus de 3 formulaires simultanément (changera en fonction de la popularité de l'application et de la demande pros/client)
@@ -319,7 +320,7 @@ Conseil juridique non autorisé (par non-avocat) → avertissement puis sanction
 
 ## Suivi et traitement :
 
-# Délais de traitement :
+## Délais de traitement :
 
 - Professionnel qui accepte un formulaire : 24h maximum pour prendre contact avec le particulier
 - Dépassement du délai → formulaire redevient automatiquement disponible
@@ -327,7 +328,7 @@ Conseil juridique non autorisé (par non-avocat) → avertissement puis sanction
 - Particulier qui ne répond pas sous 3 jours → formulaire marqué "sans suite"
 - Relance automatique si aucune prise en charge sous 3 jours
 
-# États du formulaire :
+## États du formulaire :
 
 - "En attente" : publié, visible par les professionnels
 - "Réservé" : un professionnel l'examine (2h max)
@@ -337,34 +338,34 @@ Conseil juridique non autorisé (par non-avocat) → avertissement puis sanction
 
 ## Gestion des conflits :
 
-# Système de notation :
+## Système de notation :
 
 - Particulier peut noter la prise en charge (1 à 5 étoiles) après "Terminé"
 - Professionnel peut signaler un formulaire non sérieux
 - Notes visibles uniquement par l'administration (pas publiques)
 
-# Résolution des litiges :
+## Résolution des litiges :
 - Signalement possible par les deux parties
 - Médiation administrative en cas de conflit
 - Sanction possible : suspension temporaire d'accès aux formulaires
 
 ## Conservation et archivage :
 
-# Durée de vie :
+## Durée de vie :
 
 - Formulaires actifs : maximum 2 mois en ligne
 - Formulaires traités : archivés 6 mois pour le particulier dans son espace personnel
 - Formulaires "sans suite" : supprimés après 1 mois
 - Statistiques anonymisées conservées 2 ans (amélioration du service)
 
-# Données personnelles :
+## Données personnelles :
 - Suppression automatique des données sensibles après traitement
 - Export possible par le particulier (RGPD) de ses formulaires sur 12 mois
 - Anonymisation complète après suppression de compte
 
 ## Statistiques et amélioration (considérations futures après déploiement):
 
-# Métriques suivies :
+## Métriques suivies :
 
 - Taux de prise en charge par département et par profession
 - Délai moyen de traitement

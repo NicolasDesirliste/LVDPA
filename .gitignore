@@ -1,8 +1,10 @@
-config/ 
-vendor/ 
+config/
+vendor/
 Doc Technique Privée/
 Z-box(recyclage)/
-index.php 
+AppAnalyzed/
+Backups/
+index.php
 .htaccess
 composer.json
 composer.lock
