@@ -40,7 +40,7 @@ Les personnes dans le besoin d’aide légale ou psychologique pendant et après
 Les professionnels voulant porter assistance à cette clientèle et proposer leurs services / faire partie de cette communauté. 
 
 
-## Analyse concurrentielle:
+# Analyse concurrentielle:
 
 Cette application web peut se considérer hybride, mélange de Justifit pour son côté recherche de professionnels et de reddit pour son aspect messages directs et forum de discussion.
 
@@ -55,7 +55,7 @@ Une application web de discussion globale contenant des sous-forums et donnant l
 Une plateforme de mise en relation entre des particuliers et des avocats, qui ne propose aucune forme de communication au préalable, et qui facture ses prestations des deux côtés (particuliers et professionnels.) Elle propose aux professionnels la possibilité de s’inscrire et de mettre leurs profils et leurs domaines de compétence en avant, et permet aux particuliers de trouver un avocat pour toutes sortes de problématiques. 
 
 
-## LVDPA 
+# LVDPA 
 
 - Aura un système communautaire similaire à celui de Reddit, de posts et de tags mais les sujets seront uniquement centrés autour des possibles injustices et manquements de considération des juges lors des audiences au tribunal des affaires familiales ainsi que des problèmes qui peuvent découler de leurs décisions. 
 
