@@ -1,9 +1,0 @@
-{
-    "name": "lvdpa/application",
-    "description": "Application LVDPA",
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/"
-        }
-    }
-}
