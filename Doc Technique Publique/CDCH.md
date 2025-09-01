@@ -42,22 +42,28 @@ Les professionnels voulant porter assistance à cette clientèle et proposer leu
 
 ## Analyse concurrentielle:
 
-Cette application web peut se considérer hybride, mélange de Justifit pour son côté recherche d’avocats et de reddit pour son aspect message direct et forum de discussion.
+Cette application web peut se considérer hybride, mélange de Justifit pour son côté recherche de professionnels et de reddit pour son aspect messages directs et forum de discussion.
 
 Cependant, LVDPA offrira une plus grande assistance puisqu’elle rassemblera des professionnels de plusieurs types différents qui pourront échanger entre eux ainsi qu’avec les particuliers, dans le but d’échanger et d’éduquer les victimes sur les différents services et recours qui pourraient leur être disponibles. 
 
-Reddit est une application web de discussion globale contenant des sous-forums et donnant la possibilité aux utilisateur de créer des posts en utilisant des tags propres aux subreddits (sous-forums),  tout le monde peut interagir peu importe le sujet discuté et peu importe le niveau de connaissance des lois pour donner des avis et des conseil, tandis que LVDPA elle se spécialisera en priorité sur des sujets précis et unique où les utilisateur pourrons échanger en privé ou en publique et recevoir de l’aide légale, faisant son noyau central autour de ce concept. 
+## Reddit 
 
-Justifit quant à elle, est une plateforme de mise en relation entre des particuliers et des avocats, qui ne propose aucune forme de communication au préalable, et qui facture ses prestations des deux côtés (particuliers et professionnels.) Elle propose aux professionnels la possibilité de s’inscrire et de mettre leurs profils et leurs domaines de compétence en avant, et permet aux particuliers de trouver un avocat pour toutes sortes de problématiques. 
+Une application web de discussion globale contenant des sous-forums et donnant la possibilité aux utilisateur de créer des posts en utilisant des tags propres aux subreddits (sous-forums),  tout le monde peut interagir peu importe le sujet discuté et peu importe le niveau de connaissance des lois pour donner des avis et des conseil, tandis que LVDPA elle se spécialisera en priorité sur des sujets précis et unique où les utilisateur pourrons échanger en privé ou en publique et recevoir de l’aide légale, faisant son noyau central autour de ce concept. 
+
+## Justifit
+
+Une plateforme de mise en relation entre des particuliers et des avocats, qui ne propose aucune forme de communication au préalable, et qui facture ses prestations des deux côtés (particuliers et professionnels.) Elle propose aux professionnels la possibilité de s’inscrire et de mettre leurs profils et leurs domaines de compétence en avant, et permet aux particuliers de trouver un avocat pour toutes sortes de problématiques. 
 
 
-LVDPA aura un système similaire à Reddit, de posts et de tags mais les sujets seront uniquement centrés autour des possibles injustices et manquements de considération des juges lors des audiences au tribunal des affaires familiales ainsi que des problèmes qui peuvent découler de leurs décisions. 
+## LVDPA 
 
-Son but ultime est de proposer les deux approches combinées en une seule, et de permettre à tous le monde (particuliers et professionnels) de communiquer ensemble dans un espace dédié et libre et centralisé autour des problèmes de garde qui sont très souvent problématiques. C’est ce qui permettra à l'application de se démarquer des autres. 
+- Aura un système communautaire similaire à celui de Reddit, de posts et de tags mais les sujets seront uniquement centrés autour des possibles injustices et manquements de considération des juges lors des audiences au tribunal des affaires familiales ainsi que des problèmes qui peuvent découler de leurs décisions. 
 
-LVDPA apporte aussi des informations sur divers sujets relatifs à ces problèmes (Violences conjugales et comment les identifier, pathologies psychologiques sous-jacentes) pour lesquels les juges ne sont pas forcément formés. 
+- Son but ultime est de proposer les deux approches combinées en une seule, et de permettre à tous le monde (particuliers et professionnels) de communiquer ensemble dans un espace dédié et libre et centralisé autour des problèmes de garde qui sont très souvent problématiques. C’est ce qui permettra à l'application de se démarquer des autres. 
 
-Des plateformes ayant un but similaire existent (SOSpapa) mais elles agissent plus comme des blogs et se limitent à des fonctionnalités minimales, elles ne permettent pas d’interaction entre les utilisateurs, de plus les services proposés sont bloqués derrière des souscriptions assez élevées, ce qui peut souvent être difficile à payer après un divorce. 
+- LVDPA apporte aussi des informations sur divers sujets relatifs à ces problèmes (Violences conjugales et comment les identifier, pathologies psychologiques sous-jacentes) pour lesquels les juges ne sont pas forcément formés. 
+
+- Des plateformes ayant un but similaire existent (SOSpapa) mais elles agissent plus comme des blogs et se limitent à des fonctionnalités minimales, elles ne permettent pas d’interaction entre les utilisateurs, de plus les services proposés sont bloqués derrière des souscriptions assez élevées, ce qui peut souvent être difficile à payer après un divorce. 
 
 # LVDPA: Les fonctionnalités:
 
@@ -98,7 +104,7 @@ Elle est avant toute chose une plateforme visant à trouver des professionnels q
 - La partie “Librairie” permettant à un utilisateur de poster un article/pdf trouvé sur une ressource externe, d’en écrire un récapitulatif et de mettre le lien URL vers la ressource.
 - Une possible partie “jeux gratuits” à considérer. 
 
-Côté administration: 
+## Côté administration: 
 - La mise en place de la BDD expérimentale (check!)
 - La mise en place du système d’administration (20% complète au 22/05/2025)
 - La mise en place du système d’alerte de signalement, sur site et par email. 
