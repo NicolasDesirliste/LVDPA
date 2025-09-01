@@ -1,0 +1,342 @@
+/* ========== VARIABLES CSS GLOBALES ========== */
+:root {
+    /* Couleurs principales */
+    --primary-blue: #37afe5;
+    --primary-blue-rgb: 55, 175, 229;
+    --dark-blue: #0d2b40;
+    --darker-blue: rgb(0, 15, 25);
+    --light-text: #d8e8f0;
+    --info-text: #8ebacc;
+    
+    /* Couleurs d'accentuation */
+    --warning-yellow: #ffcc00;
+    --warning-yellow-rgb: 255, 204, 0;
+    --error-red: #a02020;
+    --error-dark-red: #6a0505;
+    --scrollbar-neon: #16219b;
+    
+    /* Bordures et styles récurrents */
+    --blue-border: 1px solid rgba(var(--primary-blue-rgb), 0.3);
+    --standard-border-radius: 3px;
+    --standard-transition: all 0.2s;
+    
+    /* Gradients */
+    --form-gradient: linear-gradient(135deg, rgba(5, 25, 40, 0.95), rgba(2, 12, 20, 0.9));
+    --header-gradient: linear-gradient(180deg, #1c4c6e, var(--dark-blue));
+    --button-hover-gradient: linear-gradient(180deg, #265d86, #123551);
+    
+    /* Couleurs de fond pour options des sélecteurs */
+    --option-bg-color: #03103b8a;
+    
+    /* Couleurs pour scrollbar */
+    --scrollbar-bg: rgba(0, 10, 20, 0.7);
+    --scrollbar-thumb: rgba(var(--primary-blue-rgb), 0.4);
+    --scrollbar-thumb-hover: #54c7ff;
+    --scrollbar-track: rgba(0, 10, 20, 0.5);
+}
+
+/* ========== MODAL ========== */
+.modal {
+    display: none; /* Masqué par défaut, activé par JS */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 700px;
+    max-height: 90vh;
+    background-color: rgba(0, 5, 15, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 10; /* Au-dessus du contenu de main, mais en dessous du header/footer si nécessaire */
+    animation: modalBg 4s infinite alternate;
+}
+
+.modal.active {
+    display: block;
+}
+
+@keyframes modalBg {
+    from { background-color: rgba(0, 5, 15, 0.8); }
+    to { background-color: rgba(0, 10, 25, 0.85); }
+}
+
+.modal-container {
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+}
+
+/* ========== FORMULAIRE PRINCIPAL ========== */
+.contact-form-outer {
+    width: 100%;
+    border: var(--blue-border);
+    border-radius: var(--standard-border-radius);
+    overflow: hidden;
+    background: var(--form-gradient);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 5px rgba(var(--primary-blue-rgb), 0.5);
+    position: relative;
+    animation: formPulse 4s infinite alternate;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes formPulse {
+    from { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 5px rgba(var(--primary-blue-rgb), 0.5); }
+    to { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 15px rgba(var(--primary-blue-rgb), 0.5); }
+}
+
+/* ========== EN-TÊTE DU FORMULAIRE ========== */
+.form-header {
+    background: var(--header-gradient);
+    padding: 15px;
+    position: relative;
+    border-bottom: var(--blue-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header h2 {
+    color: var(--light-text);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 0 5px rgba(80, 200, 255, 0.5);
+}
+
+.close-form-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, var(--error-red), var(--error-dark-red));
+    color: white;
+    border: 1px solid rgba(255, 100, 100, 0.5);
+    border-radius: var(--standard-border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 50, 50, 0.3);
+    transition: var(--standard-transition);
+    text-decoration: none;
+}
+
+.close-form-btn:hover {
+    background: linear-gradient(135deg, #c02020, #8a0505);
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 70, 70, 0.5);
+}
+
+.close-form-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+/* ========== BARRE D'INFORMATION DÉFILANTE ========== */
+#info-text {
+    background: linear-gradient(90deg, rgba(0, 10, 30, 0.9), rgba(0, 20, 40, 0.8), rgba(0, 10, 30, 0.9));
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    border-top: 1px solid rgba(209, 4, 4, 0.2);
+    border-bottom: 1px solid rgba(var(--primary-blue-rgb), 0.2);
+}
+
+#info-text p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--warning-yellow);
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: textScroll 20s linear infinite;
+    text-shadow: 0 0 5px rgba(var(--warning-yellow-rgb), 0.7), 0 0 10px rgba(var(--warning-yellow-rgb), 0.4);
+}
+
+@keyframes textScroll {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+/* ========== ZONE DE CONTENU AVEC DÉFILEMENT ========== */
+.form-content {
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-blue) #021824;
+}
+
+.form-container {
+    padding: 20px;
+    position: relative;
+}
+
+/* ========== ZONE D'INFORMATION STATIQUE ========== */
+.infotext-static {
+    background: rgba(0, 20, 40, 0.6);
+    border: var(--blue-border);
+    border-radius: var(--standard-border-radius);
+    padding: 15px;
+    margin-bottom: 20px;
+    color: var(--info-text);
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+    animation: infoPulse 60s infinite alternate;
+}
+
+@keyframes infoPulse {
+    from { box-shadow: 0 0 5px rgba(var(--primary-blue-rgb), 0.1); }
+    to { box-shadow: 0 0 10px rgba(var(--primary-blue-rgb), 0.3); }
+}
+
+.infotext-static p {
+    margin: 0;
+}
+
+/* ========== SÉLECTEURS ========== */
+#departementSelect, #professionSelect {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background: var(--darker-blue);
+    border: var(--blue-border);
+    border-radius: var(--standard-border-radius);
+    color: var(--light-text);
+    font-family: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    transition: var(--standard-transition);
+    cursor: pointer;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cpath fill='%2337afe5' d='M0 0l6 6 6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-neon) var(--scrollbar-bg);
+}
+
+#departementSelect:focus, #professionSelect:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 5px rgba(var(--primary-blue-rgb), 0.5), inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#departementSelect option, #professionSelect option {
+    background-color: var(--option-bg-color);
+    color: var(--light-text);
+}
+
+/* ========== BOUTON DE SOUMISSION ========== */
+button[type="submit"] {
+    background: var(--header-gradient);
+    color: var(--light-text);
+    border: 1px solid var(--primary-blue);
+    padding: 10px 20px;
+    border-radius: var(--standard-border-radius);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 260px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--standard-transition);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+button[type="submit"]:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(116, 196, 228, 0.24), transparent);
+    transition: left 0.5s;
+}
+
+button[type="submit"]:hover {
+    background: var(--button-hover-gradient);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4), inset 0 1px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 5px rgba(var(--primary-blue-rgb), 0.5);
+}
+
+button[type="submit"]:hover:before {
+    left: 100%;
+}
+
+button[type="submit"]:active {
+    background: linear-gradient(180deg, var(--dark-blue), #1c4c6e);
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ========== PERSONNALISATION DES SCROLLBARS ========== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 4px;
+    border: 2px solid var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}
+
+#departementSelect::-webkit-scrollbar,
+#professionSelect::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+#departementSelect::-webkit-scrollbar-track,
+#professionSelect::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+    border-radius: 4px;
+}
+
+#departementSelect::-webkit-scrollbar-thumb,
+#professionSelect::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-neon);
+    border-radius: 4px;
+    border: 1px solid rgba(80, 200, 255, 0.5);
+    box-shadow: 0 0 5px rgba(var(--primary-blue-rgb), 0.7);
+}
+
+#departementSelect::-webkit-scrollbar-thumb:hover,
+#professionSelect::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+/* Supprimer les styles globaux qui affectent body */
+body {
+    margin: 0;
+    padding: 0;
+}

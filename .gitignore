@@ -1,7 +1,10 @@
 config / 
 vendor / 
-Markdown/docker-deployment-plan.md
+Doc Technique Partagée/docker-deployment-plan.md
 Z-box(recyclage) /
 Backups /
 AppAnalyzed / 
 index.php 
+.htaccess
+composer.json
+composer.lock
