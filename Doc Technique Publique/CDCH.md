@@ -1,4 +1,4 @@
-### Cahier des charges (considérations et revues):
+# Cahier des charges (considérations et revues):
 
 ## Lexique:
 - Ses objectifs
@@ -188,81 +188,88 @@ Responsabilité des hébergeurs, modération de contenu
 Article 9 : droit au respect de la vie privée
 Articles 226-1 à 226-7 du Code pénal : atteinte à la vie privée
 
-## Règles d'inscription et validation - Professionnels uniquement
+## Règles d'inscription et validation - Professionnels uniquement (Documents de validation requis)
 
-- Avocats :
-Identification obligatoire :
-Numéro d'inscription au Barreau (délivré par le Conseil de l'Ordre de chaque barreau) Cnb Barreau de Nantes
-Vérification possible via l'annuaire national des 164 barreaux français Annuaire des avocats de France (AA) - data.gouv.fr
-Titulaire obligatoire du CAPA (Certificat d'Aptitude à la Profession d'Avocat) Devenir avocat en France | Conseil national des barreaux
-Documents de validation requis :
-Copie du certificat d'inscription au barreau
-Numéro de barreau d'appartenance
-Attestation du bâtonnier précisant la date d'inscription et de prestation de serment L'avocat indépendant - Caisse Nationale des Barreaux Français
-Justificatif d'assurance responsabilité civile professionnelle
+## Avocats :
 
-- Psychologues :
-Identification obligatoire :
-Numéro RPPS (qui remplace progressivement le numéro ADELI depuis 2024) Inscription obligatoire auprès de l'ARS (Agence Régionale de Santé) Lepsychologue
-Diplôme BAC+5 minimum en psychologie validé par l'ARS N°ADELI : L'importance du répertoire des professionnels en psychologie
-Documents de validation requis :
-Numéro RPPS ou ADELI (selon la date d'inscription)
-Copie du diplôme original de psychologue Enregistrement des psychologues au répertoire Adeli (Formulaire 12269*03) | Entreprendre.Service-Public.fr
-Justificatif d'enregistrement auprès de l'ARS de son département d'exercice
+- Numéro d'inscription au Barreau (délivré par le Conseil de l'Ordre de chaque barreau) Cnb Barreau de Nantes
+- Vérification possible via l'annuaire national des 164 barreaux français Annuaire des avocats de France (AA) - data.gouv.fr
+- Titulaire obligatoire du CAPA (Certificat d'Aptitude à la Profession d'Avocat) Devenir avocat en France | Conseil national des barreaux
 
-- Médiateurs familiaux :
-Identification obligatoire :
-Diplôme d'État de Médiateur Familial (DEMF) délivré par le préfet de région Legifrance
-Code RNCP : 39645 / Code diplôme : 31956 Médiateur familial : obtention du diplôme d'état | EPE FORMATION
-Formation de 595h sur maximum 3 ans dans un établissement agréé Formation Médiateur Familial : Diplôme d'État | UCLy
-Documents de validation requis :
-Copie du Diplôme d'État de Médiateur Familial
-Numéro du diplôme et établissement de formation
-Justificatifs de formation pratique ( 105h de stage minimum) Arrêté du 19 mars 2012 relatif au diplôme d'Etat de médiateur familial - Légifrance
-Règles communes pour tous les professionnels :
-Vérification de la validité des diplômes auprès des organismes compétents
-Contrôle de l'absence de sanctions disciplinaires
-Mise à jour obligatoire en cas de changement de statut ou de région d'exercice
-Délai de validation : 15 jours ouvrés maximum après réception du dossier complet.
-Les particuliers ne devront justifier d’aucun document pour leur inscription. 
+- Copie du certificat d'inscription au barreau
+- Numéro de barreau d'appartenance
+- Attestation du bâtonnier précisant la date d'inscription et de prestation de serment L'avocat indépendant - Caisse Nationale des Barreaux Français
+- Justificatif d'assurance responsabilité civile professionnelle
+
+## Psychologues :
+
+- Numéro RPPS (qui remplace progressivement le numéro ADELI depuis 2024) Inscription obligatoire auprès de l'ARS (Agence Régionale de Santé)
+- Diplôme en psychologie validé par l'ARS N°ADELI : L'importance du répertoire des professionnels en psychologie
+- Numéro RPPS ou ADELI (selon la date d'inscription)
+- Copie du diplôme original de psychologue Enregistrement des psychologues au répertoire Adeli (Formulaire 12269*03) | Entreprendre.Service-Public.fr
+- Justificatif d'enregistrement auprès de l'ARS de son département d'exercice
+
+## Médiateurs familiaux :
+
+- Diplôme d'État de Médiateur Familial (DEMF) délivré par le préfet de région Legifrance
+- Code RNCP : 39645 / Code diplôme : 31956 Médiateur familial : obtention du diplôme d'état | EPE FORMATION
+- Formation de 595h sur maximum 3 ans dans un établissement agréé Formation Médiateur Familial : Diplôme d'État | UCLy
+- Copie du Diplôme d'État de Médiateur Familial
+- Numéro du diplôme et établissement de formation
+- Justificatifs de formation pratique ( 105h de stage minimum) Arrêté du 19 mars 2012 relatif au diplôme d'Etat de médiateur familial - Légifrance
+
+## Règles communes pour tous les professionnels :
+- Vérification de la validité des diplômes auprès des organismes compétents
+- Contrôle de l'absence de sanctions disciplinaires
+- Mise à jour obligatoire en cas de changement de statut ou de région d'exercice
+- Délai de validation : 15 jours ouvrés maximum après réception du dossier complet.
+
+- Les particuliers ne devront justifier d’aucun document pour leur inscription. 
 
 ## Règles de messagerie / Formulaire - LVDPA
 
 # Limites d'utilisation :
 
-- Pour les particuliers :
-Maximum 9 nouveaux contacts professionnels (3 par types) par semaine
-Maximum 20 messages par jour vers un même professionnel / 
-3 formulaires (1 par type de professionnels) par semaine
-Délai minimum de 1 entre deux messages vers le même destinataire (anti-spam)
+### Pour les particuliers :
 
-- Pour les professionnels :
-Pas de limite sur les réponses aux particuliers qui les contactent
-Maximum 20 nouveaux contacts particuliers par mois (pour éviter le démarchage)
-Obligation de répondre sous 72h à un premier contact (ou marquer "indisponible")
-48h pour traiter un formulaire pris en charge
+- Maximum 9 nouveaux contacts professionnels (3 par types) par semaine
+- Maximum 20 messages par jour vers un même professionnel / 
+- 3 formulaires (1 par type de professionnels) par semaine
+- Délai minimum de 1 entre deux messages vers le même destinataire (anti-spam)
 
-- Limites techniques :
-Taille maximum par message : 2000 caractères
-Pas de pièces jointes dans la messagerie (sécurité + confidentialité)
-Conservation des données :
-Durée de stockage :
-Messages actifs : conservés 6 mois après le dernier échange
-Messages supprimés par l'utilisateur : anonymisés sous 30 jours
-Conversations avec les professionnels: chiffrement renforcé + serveurs français exclusivement (o2switch).
+### Pour les professionnels :
+
+- Pas de limite sur les réponses aux particuliers qui les contactent
+- Maximum 20 nouveaux contacts particuliers par mois (pour éviter le démarchage)
+- Obligation de répondre sous 72h à un premier contact (ou marquer "indisponible")
+- 48h pour traiter un formulaire pris en charge
+
+### Limites techniques :
+
+- Taille maximum par message : 2000 caractères
+- Pas de pièces jointes dans la messagerie (sécurité + confidentialité)
+- Conservation des données :
+
+### Durée de stockage :
+
+- Messages actifs : conservés 6 mois après le dernier échange
+- Messages supprimés par l'utilisateur : anonymisés sous 30 jours
+- Conversations avec les professionnels: chiffrement renforcé + serveurs français exclusivement (o2switch).
 
 
-- Modalités de suppression :
-Suppression côté expéditeur : message remplacé par "[Message supprimé]" côté destinataire
-Suppression de compte : toutes les conversations anonymisées sous 15 jours
-Droit à l'oubli RGPD : effacement complet sous 30 jours sur demande
-Modération automatique : En attente d’étude et de considération. 
+### Modalités de suppression :
 
-- Intervention humaine :
-Messages signalés : examen sous 24h en jours ouvrés
-Contenu à caractère sexuel → suppression immédiate + bannissement + rapport au autorités compétente
-Chantage ou menaces → signalement aux autorités + bannissement
-Conseil juridique non autorisé (par non-avocat) → avertissement puis sanction
+- Suppression côté expéditeur : message remplacé par "[Message supprimé]" côté destinataire
+- Suppression de compte : toutes les conversations anonymisées sous 15 jours
+- Droit à l'oubli RGPD : effacement complet sous 30 jours sur demande
+- Modération automatique : En attente d’étude et de considération. 
+
+### Intervention humaine :
+
+- Messages signalés : examen sous 24h en jours ouvrés
+- Contenu à caractère sexuel → suppression immédiate + bannissement + rapport au autorités compétente
+- Chantage ou menaces → signalement aux autorités + bannissement
+- Conseil juridique non autorisé (par non-avocat) → avertissement puis sanction
 
 # Sécurité et confidentialité :
 
